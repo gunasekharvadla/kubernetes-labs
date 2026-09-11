@@ -1,0 +1,4 @@
+NAME                                READY   STATUS    RESTARTS      AGE    IP           NODE                 NOMINATED NODE   READINESS GATES
+nginx-deployment-7489fb554f-5x84x   1/1     Running   1 (65m ago)   2d6h   10.244.1.2   devops-lab-worker2   <none>           <none>
+nginx-deployment-7489fb554f-nlgjm   1/1     Running   2 (65m ago)   3d7h   10.244.3.3   devops-lab-worker3   <none>           <none>
+nginx-deployment-7489fb554f-srwkt   1/1     Running   1 (65m ago)   2d6h   10.244.3.2   devops-lab-worker3   <none>           <none>

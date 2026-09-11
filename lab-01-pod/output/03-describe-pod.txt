@@ -1,0 +1,51 @@
+Name:             nginx-pod
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             devops-lab-worker/172.19.0.5
+Start Time:       Fri, 11 Sep 2026 11:38:41 +0000
+Labels:           app=nginx
+Annotations:      <none>
+Status:           Running
+IP:               10.244.2.2
+IPs:
+  IP:  10.244.2.2
+Containers:
+  nginx:
+    Container ID:   containerd://49ebbbd99daba8800582ff405a4538546653cb4b36ee0e3f774a28f8e82f900a
+    Image:          nginx:1.27
+    Image ID:       docker.io/library/nginx@sha256:6784fb0834aa7dbbe12e3d7471e69c290df3e6ba810dc38b34ae33d3c1c05f7d
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Fri, 11 Sep 2026 11:38:46 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-znwnc (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-znwnc:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  79s   default-scheduler  Successfully assigned default/nginx-pod to devops-lab-worker
+  Normal  Pulled     75s   kubelet            Container image "nginx:1.27" already present on machine
+  Normal  Created    75s   kubelet            Created container: nginx
+  Normal  Started    74s   kubelet            Started container nginx

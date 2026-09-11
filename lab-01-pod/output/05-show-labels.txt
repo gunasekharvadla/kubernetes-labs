@@ -1,0 +1,5 @@
+NAME                                READY   STATUS    RESTARTS      AGE    LABELS
+nginx-deployment-7489fb554f-5x84x   1/1     Running   1 (67m ago)   2d6h   app=nginx,pod-template-hash=7489fb554f
+nginx-deployment-7489fb554f-nlgjm   1/1     Running   2 (67m ago)   3d7h   app=nginx,pod-template-hash=7489fb554f
+nginx-deployment-7489fb554f-srwkt   1/1     Running   1 (67m ago)   2d6h   app=nginx,pod-template-hash=7489fb554f
+nginx-pod                           1/1     Running   0             89s    app=nginx
