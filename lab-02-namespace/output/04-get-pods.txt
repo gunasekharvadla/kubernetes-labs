@@ -1,0 +1,2 @@
+NAME        READY   STATUS    RESTARTS   AGE
+nginx-dev   1/1     Running   0          20s

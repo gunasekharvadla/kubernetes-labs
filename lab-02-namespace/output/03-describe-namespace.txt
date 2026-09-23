@@ -1,0 +1,10 @@
+Name:         devops-dev
+Labels:       environment=development
+              kubernetes.io/metadata.name=devops-dev
+              managed-by=kubectl
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.

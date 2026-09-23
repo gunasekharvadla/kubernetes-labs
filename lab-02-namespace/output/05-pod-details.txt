@@ -1,0 +1,2 @@
+NAME        READY   STATUS    RESTARTS   AGE   IP           NODE                NOMINATED NODE   READINESS GATES
+nginx-dev   1/1     Running   0          32s   10.244.2.3   devops-lab-worker   <none>           <none>

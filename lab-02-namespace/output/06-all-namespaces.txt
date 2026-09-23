@@ -1,0 +1,21 @@
+NAMESPACE            NAME                                               READY   STATUS    RESTARTS        AGE
+default              nginx-deployment-7489fb554f-5x84x                  1/1     Running   4 (6m39s ago)   13d
+default              nginx-deployment-7489fb554f-nlgjm                  1/1     Running   5 (6m40s ago)   14d
+default              nginx-deployment-7489fb554f-srwkt                  1/1     Running   4 (6m40s ago)   13d
+default              nginx-pod                                          1/1     Running   3 (6m43s ago)   11d
+devops-dev           nginx-dev                                          1/1     Running   0               2m9s
+kube-system          coredns-66bc5c9577-dfpmd                           1/1     Running   7 (6m39s ago)   19d
+kube-system          coredns-66bc5c9577-zvmrh                           1/1     Running   7 (6m42s ago)   19d
+kube-system          etcd-devops-lab-control-plane                      1/1     Running   0               6m29s
+kube-system          kindnet-2bw89                                      1/1     Running   7 (6m43s ago)   19d
+kube-system          kindnet-gtbkh                                      1/1     Running   7 (6m42s ago)   19d
+kube-system          kindnet-khgl2                                      1/1     Running   7 (6m40s ago)   19d
+kube-system          kindnet-m5m88                                      1/1     Running   7 (6m39s ago)   19d
+kube-system          kube-apiserver-devops-lab-control-plane            1/1     Running   0               6m29s
+kube-system          kube-controller-manager-devops-lab-control-plane   1/1     Running   8 (6m42s ago)   19d
+kube-system          kube-proxy-4dh5t                                   1/1     Running   7 (6m39s ago)   19d
+kube-system          kube-proxy-552pd                                   1/1     Running   7 (6m40s ago)   19d
+kube-system          kube-proxy-cg6jc                                   1/1     Running   7 (6m43s ago)   19d
+kube-system          kube-proxy-l8wqb                                   1/1     Running   7 (6m42s ago)   19d
+kube-system          kube-scheduler-devops-lab-control-plane            1/1     Running   9 (6m42s ago)   19d
+local-path-storage   local-path-provisioner-7b8c8ddbd6-n5rd8            1/1     Running   19 (5m4s ago)   19d
