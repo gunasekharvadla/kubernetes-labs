@@ -1,10 +1,28 @@
+
+$ kubectl apply -f resourcequota.yaml
+resourcequota/devops-dev-quota created
+
+$ kubectl apply -f limitrange.yaml
+limitrange/devops-dev-limits created
+
+$ kubectl describe namespace devops-dev
 Name:         devops-dev
 Labels:       environment=development
-              kubernetes.io/metadata.name=devops-dev
               managed-by=kubectl
-Annotations:  <none>
 Status:       Active
 
-No resource quota.
+Resource Quotas
+ Name:            devops-dev-quota
+ Resource         Used  Hard
+ --------         ----  ----
+ limits.cpu       0     4
+ limits.memory    0     4Gi
+ pods             0     10
+ requests.cpu     0     2
+ requests.memory  0     2Gi
 
-No LimitRange resource.
+Resource Limits
+ Type       Resource  Min    Max   Default Request  Default Limit  Max Limit/Request Ratio
+ ----       --------  ---    ---   ----------------  -------------  -----------------------
+ Container  cpu       50m    1     100m              250m           -
+ Container  memory    64Mi   1Gi   128Mi             256Mi          -
