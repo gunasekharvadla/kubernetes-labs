@@ -1,0 +1,6 @@
+NAME                                READY   STATUS    RESTARTS        AGE
+nginx-deployment-7489fb554f-5x84x   1/1     Running   5 (4m26s ago)   16d
+nginx-deployment-7489fb554f-nlgjm   1/1     Running   6 (4m26s ago)   17d
+nginx-deployment-7489fb554f-srwkt   1/1     Running   5 (4m26s ago)   16d
+nginx-pod                           1/1     Running   4 (4m26s ago)   13d
+web-pod                             1/1     Running   0               35s

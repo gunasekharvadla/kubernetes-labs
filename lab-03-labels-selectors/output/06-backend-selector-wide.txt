@@ -1,0 +1,2 @@
+NAME          READY   STATUS    RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
+backend-pod   1/1     Running   0          74s   10.244.3.4   devops-lab-worker3   <none>           <none>

@@ -1,0 +1,53 @@
+Name:             web-pod
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             devops-lab-worker/172.19.0.5
+Start Time:       Fri, 25 Sep 2026 09:58:13 +0000
+Labels:           app=web
+                  environment=dev
+                  tier=frontend
+Annotations:      <none>
+Status:           Running
+IP:               10.244.2.4
+IPs:
+  IP:  10.244.2.4
+Containers:
+  nginx:
+    Container ID:   containerd://735cb8d226cbd3ec0db2ca71347868e8dece1a131c165dfdbec67d319b0e3824
+    Image:          nginx:1.27
+    Image ID:       docker.io/library/nginx@sha256:6784fb0834aa7dbbe12e3d7471e69c290df3e6ba810dc38b34ae33d3c1c05f7d
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Fri, 25 Sep 2026 09:58:15 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-65tqt (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-65tqt:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  25m   default-scheduler  Successfully assigned default/web-pod to devops-lab-worker
+  Normal  Pulled     25m   kubelet            Container image "nginx:1.27" already present on machine
+  Normal  Created    25m   kubelet            Created container: nginx
+  Normal  Started    25m   kubelet            Started container nginx
