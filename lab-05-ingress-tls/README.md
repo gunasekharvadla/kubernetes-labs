@@ -1,4 +1,4 @@
-# Lab 05 — Kubernetes Ingress + TLS
+# Lab 04 — Kubernetes Ingress + TLS
 
 ## Overview
 
