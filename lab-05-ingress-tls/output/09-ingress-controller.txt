@@ -1,0 +1,2 @@
+NAME                                       READY   STATUS    RESTARTS   AGE
+ingress-nginx-controller-bd56db597-c846b   1/1     Running   0          17m

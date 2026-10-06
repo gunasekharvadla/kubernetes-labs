@@ -1,0 +1,2 @@
+NAME             CLASS   HOSTS                                 ADDRESS      PORTS     AGE
+devops-ingress   nginx   web.example.local,api.example.local   172.19.0.4   80, 443   14m

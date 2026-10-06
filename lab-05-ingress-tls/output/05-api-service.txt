@@ -1,0 +1,2 @@
+NAME          TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE
+api-service   ClusterIP   10.96.50.96   <none>        80/TCP    18m

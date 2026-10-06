@@ -1,0 +1,3 @@
+NAME                       READY   STATUS    RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+api-app-666f97f784-tgb9k   1/1     Running   0          9m20s   10.244.2.7   devops-lab-worker    <none>           <none>
+api-app-666f97f784-x94d2   1/1     Running   0          9m18s   10.244.3.8   devops-lab-worker3   <none>           <none>
