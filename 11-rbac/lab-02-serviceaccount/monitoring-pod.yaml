@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: monitoring-app
+  namespace: monitoring
+spec:
+  serviceAccountName: monitor-sa
+  containers:
+  - name: app
+    image: nginx
